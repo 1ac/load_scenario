@@ -1,2 +1,6 @@
 
 .DS_Store
+*/jmeter.log
+*/build
+*/.gradle/
+.idea

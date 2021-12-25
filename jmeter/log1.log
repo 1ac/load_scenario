@@ -1,0 +1,14 @@
+➜  jmeter jmeter -n -t nginx_home.jmx
+WARNING: package sun.awt.X11 not in java.desktop
+Creating summariser <summary>
+Created the tree successfully using nginx_home.jmx
+Starting standalone test @ Fri Dec 24 04:24:36 MSK 2021 (1640309076525)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary + 228773 in 00:00:23 = 9760.8/s Avg:     0 Min:     0 Max:    20 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary + 276730 in 00:00:30 = 9224.3/s Avg:     0 Min:     0 Max:    22 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary = 505503 in 00:00:53 = 9459.6/s Avg:     0 Min:     0 Max:    22 Err:     0 (0.00%)
+summary +  37222 in 00:00:07 = 5644.8/s Avg:     0 Min:     0 Max:    14 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary = 542725 in 00:01:00 = 9040.4/s Avg:     0 Min:     0 Max:    22 Err:     0 (0.00%)
+Tidying up ...    @ Fri Dec 24 04:25:36 MSK 2021 (1640309136595)
+... end of run
+
