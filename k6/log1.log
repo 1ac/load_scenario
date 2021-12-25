@@ -1,0 +1,40 @@
+➜  k6 k6 run --vus 1 --duration 60s nginx_home.js 
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: nginx_home.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 1 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m00.0s), 0/1 VUs, 383935 complete and 0 interrupted iterations
+default ✓ [======================================] 1 VUs  1m0s
+
+     ✓ status was 200
+
+     checks.........................: 100.00% ✓ 383935      ✗ 0     
+     data_received..................: 328 MB  5.5 MB/s
+     data_sent......................: 31 MB   512 kB/s
+     http_req_blocked...............: avg=1.3µs    min=0s      med=1µs      max=2.27ms  p(90)=1µs      p(95)=2µs     
+     http_req_connecting............: avg=175ns    min=0s      med=0s       max=1.78ms  p(90)=0s       p(95)=0s      
+     http_req_duration..............: avg=115.01µs min=82µs    med=108µs    max=21.31ms p(90)=135µs    p(95)=149µs   
+       { expected_response:true }...: avg=115.01µs min=82µs    med=108µs    max=21.31ms p(90)=135µs    p(95)=149µs   
+     http_req_failed................: 0.00%   ✓ 0           ✗ 383935
+     http_req_receiving.............: avg=17.54µs  min=10µs    med=16µs     max=390µs   p(90)=22µs     p(95)=25µs    
+     http_req_sending...............: avg=5.38µs   min=3µs     med=5µs      max=331µs   p(90)=8µs      p(95)=8µs     
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s      p(90)=0s       p(95)=0s      
+     http_req_waiting...............: avg=92.08µs  min=65µs    med=86µs     max=21.22ms p(90)=109µs    p(95)=122µs   
+     http_reqs......................: 383935  6398.904082/s
+     iteration_duration.............: avg=152.72µs min=111.3µs med=144.03µs max=21.49ms p(90)=176.01µs p(95)=193.13µs
+     iterations.....................: 383935  6398.904082/s
+     vus............................: 1       min=1         max=1   
+     vus_max........................: 1       min=1         max=1   
+
+
